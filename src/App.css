@@ -1,9 +1,9 @@
-#btn{
+.btn{
     padding: 10px;
     border: none;
     margin-right: 10px;
     text-transform: uppercase;
-    width: 80px;
+    width: 100px;
     font-size: 0.9rem;
     cursor: pointer;
     outline: none;
@@ -37,4 +37,18 @@
     color: #808080;
     text-transform: uppercase;
     margin-left: 30px;
+}
+
+.delBtn{
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 100px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    margin-left: 30px;
+    /* margin-top: 20px; */
+    background: palevioletred;
 }
