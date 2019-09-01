@@ -1,11 +1,15 @@
-import React from "react";
+import React, {Component} from "react";
 import Header from "./Components/Header";
 import './App.css';
 import {render} from "react-dom"
 // import logo from './logo.svg';
 // import './App.css';
 
-function App() {
+class App extends Component {
+   clickHandler(message){
+      alert(message)
+   }
+   render() {
    let subscribers = [
       {
          id: "1",
@@ -18,7 +22,7 @@ function App() {
          phone: "885152623"
       }
    ]
-//   render() {
+
   return (
     <fragment>
       <Header heading = "Phone Directory"/>
@@ -32,14 +36,14 @@ function App() {
             return <div className="grid-container" key={sub.id}>
                <span className="grid-item">{sub.name}</span>
                <span className="grid-item">{sub.phone}</span>
-               <button className = "grid-item  delBtn ">Delete</button>
+               <button className = "grid-item  delBtn " onClick={this.clickHandler.bind(this, "dddeleted")}>Delete</button>
             </div>
          })
       }
       
     </fragment>
   );
-//   }
+  }
 }
 
 export default App;
